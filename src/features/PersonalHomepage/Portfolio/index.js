@@ -1,9 +1,18 @@
 import React from "react";
 import { Section } from "../Skills/styled";
-import { SubHeader } from "./styled";
+import { MyRecentProjects, SubHeader, Header, StyledGithubIcon } from "./styled";
+import { Content } from "../Content";
 
-export const Portfolio = ()=>(
+
+export const Portfolio = () => (
     <Section>
-        <SubHeader>Portfolio </SubHeader>
+        <Header>
+            <StyledGithubIcon />
+            <SubHeader>Portfolio </SubHeader>
+            <MyRecentProjects>My recent projects</MyRecentProjects>
+        </Header>
+         <Content />
     </Section>
+   
+
 );
