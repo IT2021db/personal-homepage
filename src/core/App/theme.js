@@ -6,6 +6,7 @@ export const themeLight = {
         slateGray: "#6E7E91",
         alto: "#ddd",
         gallery: "#eee",
+        iron:"#D1D5DA",
         white: "#fff",
         whiteLilac: "#FBFBFE",
         mercury: "#E5E5E5",
