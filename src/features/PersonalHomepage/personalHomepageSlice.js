@@ -16,7 +16,7 @@ const personalHomePageSlice = createSlice({
             status: "success",
             repositories,
         }),
-        fetchrepositoriesError: () => ({
+        fetchRepositoriesError: () => ({
             status: "error",
             repositories: null,
         }),
@@ -26,7 +26,7 @@ const personalHomePageSlice = createSlice({
 export const {
     fetchRepositories,
     fetchRepositoriesSuccess,
-    fetchrepositoriesError,
+    fetchRepositoriesError,
 } = personalHomePageSlice.actions;
 
 const selectPersonalHomePageState = state => state.personalHomePageState;
