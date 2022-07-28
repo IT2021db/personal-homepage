@@ -2,7 +2,21 @@
 
 ## DEMO: https://it2021db.github.io/personal-homepage/
 
+## About the app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Technologies that I have implemented in the project:
+
+- HTML,
+- CSS,
+- JavaScript,
+- Styled Components,
+- React,
+- React Router,
+- React Redux,
+- Redux Saga,
+- and more...
 
 ## Available Scripts
 
