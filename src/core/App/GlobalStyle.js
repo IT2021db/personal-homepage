@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     overflow-y: scroll;
     padding-bottom:  108px; //by odstep na dole byl
     margin-top: 46px;
+    color:${({theme})=>theme.color.stateGray};
 
   
 

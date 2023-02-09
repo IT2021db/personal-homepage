@@ -6,13 +6,14 @@ export const Wrapper = styled.header`
     grid-template-columns: auto 1fr;
     max-width: 1216px;
     height: 404px;
-    background-color: ${({ theme }) => theme.color.silver};
+    background-color: ${({ theme }) => theme.color.galery};
 `;
 
 export const Avatar = styled.img`
     width: 398px;
     height: 398px;
     border-radius: 50%;
+    margin-right:66px;
 `;
 
 export const ThisIs = styled.div`
