@@ -7,7 +7,7 @@ export const Tile = styled.li`
     color: ${({ theme }) => theme.color.slateGray};
     background-color: ${({ theme }) => theme.color.white};
     border: 6px solid ${({ theme }) => theme.color.iron};
-    box-shadow: 0px 0px 10px  ${({ theme }) => theme.color.iron};
+    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
     list-style-type:none;
        
