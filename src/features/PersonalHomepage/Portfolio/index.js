@@ -1,18 +1,16 @@
 import React from "react";
-import { Section } from "../Skills/styled";
-import { MyRecentProjects, SubHeader, Header, StyledGithubIcon } from "./styled";
-import { Content } from "../Content";
-
+//import { Section } from "../Skills/styled";
+import { Title, SubHeader, StyledGithubIcon, Section } from "./styled";
+//import { Content } from "../Content";
+import { Tiles } from "./Tiles";
 
 export const Portfolio = () => (
     <Section>
-        <Header>
-            <StyledGithubIcon />
-            <SubHeader>Portfolio </SubHeader>
-            <MyRecentProjects>My recent projects</MyRecentProjects>
-        </Header>
-         <Content />
+        <StyledGithubIcon />
+        <SubHeader>Portfolio </SubHeader>
+        <Title>My recent projects</Title>
+        <Tiles />
     </Section>
-   
+
 
 );
