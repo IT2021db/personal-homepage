@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ReactComponent as GithubIcon} from "./github.svg";
+import { ReactComponent as GithubIcon } from "./github.svg";
 
 export const SubHeader = styled.header`
     font-size: 30px;
@@ -14,10 +14,11 @@ export const MyRecentProjects = styled.div`
     text-align: center;
 `;
 
-export const Header=styled.header`
+export const Header = styled.header`
     text-align: center;
 `;
 
-export const StyledGithubIcon=styled(GithubIcon)`
+export const StyledGithubIcon = styled(GithubIcon)`
     margin-bottom:12px ;
 `;
+

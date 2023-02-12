@@ -4,14 +4,15 @@ import { themeLight } from "../../../core/App/theme";
 export const Wrapper = styled.header`
     display:grid;
     grid-template-columns: auto 1fr;
-    max-width: 1216px;
-    height: 404px;
-    background-color: ${({ theme }) => theme.color.silver};
+       /* height: 404px; */
+    grid-gap:66px; //64px
+    align-items: center;
+    background-color: ${({ theme }) => theme.color.mercury};
 `;
 
 export const Avatar = styled.img`
-    width: 398px;
-    height: 398px;
+    max-width: 398px;
+    width: 30vw;
     border-radius: 50%;
 `;
 
@@ -31,9 +32,12 @@ export const Name = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.05em; 
     color:${({ theme }) => theme.color.slateGray}
+`;
+
+export const StyledButtonLink = styled.button`
+
 `;
