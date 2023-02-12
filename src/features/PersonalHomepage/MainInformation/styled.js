@@ -4,16 +4,16 @@ import { themeLight } from "../../../core/App/theme";
 export const Wrapper = styled.header`
     display:grid;
     grid-template-columns: auto 1fr;
-       /* height: 404px; */
-    grid-gap:66px; //64px
-    align-items: center;
-    background-color: ${({ theme }) => theme.color.mercury};
+    max-width: 1216px;
+    height: 404px;
+    background-color: ${({ theme }) => theme.color.galery};
 `;
 
 export const Avatar = styled.img`
     max-width: 398px;
     width: 30vw;
     border-radius: 50%;
+    margin-right:66px;
 `;
 
 export const ThisIs = styled.div`

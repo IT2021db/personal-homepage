@@ -10,12 +10,14 @@ export const SubHeader = styled.header`
     color: ${({ theme }) => theme.color.black};
 `;
 
-export const MyRecentProjects = styled.div`
+export const Title = styled.div`
     text-align: center;
+    margin-bottom: 32px;
 `;
 
-export const Header = styled.header`
+export const Section = styled.header`
     text-align: center;
+    background-color: ${({theme})=>theme.color.galery};
 `;
 
 export const StyledGithubIcon = styled(GithubIcon)`

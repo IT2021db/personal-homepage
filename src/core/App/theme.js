@@ -13,6 +13,7 @@ export const themeLight = {
         teal: "#008080",
         cardinal: "#c41e3a",
         forestGreen: "#228c22",
+        scienceBlue: "#0366D6",
     },
     breakpoint: {
         mobileMax: 767,

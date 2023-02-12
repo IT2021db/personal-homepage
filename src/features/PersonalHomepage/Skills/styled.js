@@ -18,9 +18,9 @@ export const StyleHeader = styled.header`
 `;
 
 export const List = styled.ul`
-
+color: ${({ theme }) => theme.color.slateGray};
 `;
 
 export const Item = styled.li`
-    
+   
 `;
