@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { Provider } from "react-redux";
+//import { Provider } from "react-redux";
 import { GlobalStyle } from "./GlobalStyle";
 import { themeLight } from "./theme";
 import { PersonalHomepage } from "../../features/PersonalHomepage";

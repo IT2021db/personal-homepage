@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+//import { useDispatch, useSelector } from "react-redux";
 import { Section } from "../Skills/styled";
 import { MyRecentProjects, SubHeader, Header, StyledGithubIcon } from "./styled";
 import { Content } from "./Content";
-import { GetApi } from "./GetApi";
 import { githubUsername } from "./githubUsername";
 import { Title,  } from "./styled";
 import { Tiles } from "./Tiles";
@@ -37,8 +36,8 @@ const [state, setState]=useState()
             />
        <>
        </>
-              <button>figa</button>
-            <GetApi />
+           
+         
         </Section>
     );
 };
