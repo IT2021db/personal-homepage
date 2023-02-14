@@ -31,7 +31,6 @@ export const LinkWrapper = styled.p
 export const Link = styled.a` 
   color: ${({ theme }) => theme.color.scienceBlue};
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
-  //list-style-type:none;
   text-align:left;
   margin: 0 8px ;
 `;
