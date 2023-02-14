@@ -14,6 +14,10 @@ export const Title = styled.div`
     text-align: center;
     margin-bottom: 32px;
 `;
+export const Header = styled.h3`
+    text-align: center;
+    margin-bottom: 32px;
+`;
 
 export const Section = styled.header`
     text-align: center;
@@ -23,3 +27,9 @@ export const Section = styled.header`
 export const StyledGithubIcon = styled(GithubIcon)`
     margin-bottom:12px ;
 `;
+
+export const MyRecentProjects = styled.h3`
+    text-align: center;
+    background-color: ${({theme})=>theme.color.galery};
+`;
+

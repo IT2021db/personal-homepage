@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Paragraph, Wrapper, Name, ThisIs } from "./styled";
+import { Avatar, Paragraph, Wrapper, Name, ThisIs, StyledButtonLink } from "./styled";
 
 
 
@@ -11,7 +11,8 @@ export const MainInformation = () => (
         <div>
             <ThisIs>This is</ThisIs>
             <Name>Dorota Borowska</Name>
-            <Paragraph>Hi! I’m a begining Frontend Developer mostly using React</Paragraph>
+            <Paragraph>Hi! I am a begining Frontend Developer mostly using React</Paragraph>
+            <StyledButtonLink>Hire Me</StyledButtonLink>
         </div>
     </Wrapper>
 

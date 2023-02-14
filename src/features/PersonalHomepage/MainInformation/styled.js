@@ -10,8 +10,8 @@ export const Wrapper = styled.header`
 `;
 
 export const Avatar = styled.img`
-    width: 398px;
-    height: 398px;
+    max-width: 398px;
+    width: 30vw;
     border-radius: 50%;
     margin-right:66px;
 `;
@@ -32,9 +32,12 @@ export const Name = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.05em; 
     color:${({ theme }) => theme.color.slateGray}
+`;
+
+export const StyledButtonLink = styled.button`
+
 `;
