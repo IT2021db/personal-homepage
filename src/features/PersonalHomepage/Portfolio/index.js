@@ -4,17 +4,17 @@ import { Section } from "../Skills/styled";
 import { MyRecentProjects, SubHeader, Header, StyledGithubIcon } from "./styled";
 import { Content } from "./Content";
 import { githubUsername } from "./githubUsername";
-import { Title,  } from "./styled";
+import { Title, } from "./styled";
 import { Tiles } from "./Tiles";
 
 
 
 export const Portfolio = () => {
-  
-const [state, setState]=useState()
-// useEffect (()=>{
-//     fetch("https://api.github.com/users/IT2021db/repos").then(res=>setState(res.data))
-// })
+
+    const [state, setState] = useState()
+    // useEffect (()=>{
+    //     fetch("https://api.github.com/users/IT2021db/repos").then(res=>setState(res.data))
+    // })
 
     // useEffect(()=>{
     //     dispatch(fetchRepositories(githubUsername));
@@ -25,19 +25,20 @@ const [state, setState]=useState()
             <Header>
                 <StyledGithubIcon />
                 <SubHeader>Portfolio </SubHeader>
-                <MyRecentProjects>My recent projects </MyRecentProjects>
+                <Title>My recent projects </Title>
+                <Tiles />
             </Header>
             <Content
             // status={repositoriesStatus}
             // repositories={repositories}
-            
-          
-            
+
+
+
             />
-       <>
-       </>
-           
-         
+            <>
+            </>
+
+
         </Section>
     );
 };
