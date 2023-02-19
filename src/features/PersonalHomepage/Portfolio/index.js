@@ -28,17 +28,7 @@ export const Portfolio = () => {
                 <Title>My recent projects </Title>
                 <Tiles />
             </Header>
-            <Content
-            // status={repositoriesStatus}
-            // repositories={repositories}
-
-
-
-            />
-            <>
-            </>
-
-
+            <Content />
         </Section>
     );
 };
