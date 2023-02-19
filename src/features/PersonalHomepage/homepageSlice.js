@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const homepageSlice = ({
-    name: "externalRepos",
+const homepageSlice = createSlice({
+    name: "homepage",
     initialState: {
         repos: [],
-        staus: "loading"
+        status: "loading"
     },
-    rducers: {
+    reducers: {
         fetchRepos: state => {
             state.status = "loading";
         },
@@ -20,7 +20,8 @@ const homepageSlice = ({
     },
 });
 
+const selecthomepageSlice = state => state.homepage;
+export const selectRepos = state => selecthomepageSlice(state).repos;
 export const { fetchRepos, fetchReposSuccess, fetchReposError } = homepageSlice.actions;
-const selectExternalReposSlice = state => state.externalRepos;
 
-export const selectRepos = state => selectExternalReposSlice(state).repos;
+export default homepageSlice.reducer;
