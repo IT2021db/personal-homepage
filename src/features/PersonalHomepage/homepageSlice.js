@@ -20,8 +20,9 @@ const homepageSlice = createSlice({
     },
 });
 
+export const { fetchRepos, fetchReposSuccess, fetchReposError } = homepageSlice.actions;
+
 const selecthomepageSlice = state => state.homepage;
 export const selectRepos = state => selecthomepageSlice(state).repos;
-export const { fetchRepos, fetchReposSuccess, fetchReposError } = homepageSlice.actions;
 
 export default homepageSlice.reducer;
