@@ -1,28 +1,25 @@
 import { Title, Description, Link, LinkWrapper, Wrapper } from "./styled"
 
-export const Repositories = ({ repoName, description }) => {
+export const Repositories = ({ repoName, userName, description, repoURL }) => {
 
     return (
-
-
         <Wrapper>
             <Title>{repoName}</Title>
             <Description>
                 {description}
             </Description>
-
             <LinkWrapper>
                 Demo:
-                <Link>https://Demo_addres</Link>
+                <Link href={`https://${userName}.github.io/${repoName}`}>
+                    {`https://${userName}.github.io/${repoName}`}
+                </Link>
             </LinkWrapper>
-
             <LinkWrapper>
                 Code:
-                <Link>https://Link_addres</Link>
+                <Link href={repoURL}>
+                    {repoURL}
+                </Link>
             </LinkWrapper>
         </Wrapper>
-
-
-
-    )
-}
+    );
+};
