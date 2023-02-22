@@ -5,7 +5,7 @@ export const themeLight = {
         silver: "#ccc",
         slateGray: "#6E7E91",
         alto: "#ddd",
-        gallery: "#eee",
+        gallery: "#EFEFEF",
         iron:"#D1D5DA",
         white: "#fff",
         whiteLilac: "#FBFBFE",
@@ -14,6 +14,7 @@ export const themeLight = {
         cardinal: "#c41e3a",
         forestGreen: "#228c22",
         scienceBlue: "#0366D6",
+        whiteLilac:"#FBFBFE"
     },
     breakpoint: {
         mobileMax: 767,
