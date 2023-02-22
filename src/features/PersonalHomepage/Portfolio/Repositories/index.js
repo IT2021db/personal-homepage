@@ -10,13 +10,21 @@ export const Repositories = ({ repoName, userName, description, repoURL }) => {
             </Description>
             <LinkWrapper>
                 Demo:
-                <Link href={`https://${userName}.github.io/${repoName}`}>
+                <Link
+                    href={`https://${userName}.github.io/${repoName}`}
+                    target="_blank"
+                    rel="noopener norefereer"
+                >
                     {`https://${userName}.github.io/${repoName}`}
                 </Link>
             </LinkWrapper>
             <LinkWrapper>
                 Code:
-                <Link href={repoURL}>
+                <Link
+                    href={repoURL}
+                    target="_blank"
+                    rel="noopener norefereer"
+                >
                     {repoURL}
                 </Link>
             </LinkWrapper>
