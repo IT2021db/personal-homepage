@@ -31,7 +31,9 @@ export const Description = styled.p`
   font-size: 18px;
 `;
 
-export const LinkWrapper = styled.div``;
+export const LinkWrapper = styled.div`
+padding:8px 0;
+`;
 
 export const Link = styled.a` 
   color: ${({ theme }) => theme.color.scienceBlue};
