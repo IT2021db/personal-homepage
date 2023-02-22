@@ -10,7 +10,7 @@ export const SubHeader = styled.header`
     color: ${({ theme }) => theme.color.black};
 `;
 
-export const Title = styled.div`
+export const Title = styled.h3`
     text-align: center;
     margin-bottom: 32px;
 `;
@@ -28,7 +28,7 @@ export const StyledGithubIcon = styled(GithubIcon)`
     margin-bottom:12px ;
 `;
 
-export const MyRecentProjects = styled.h3`
+export const ReposWrapper = styled.h3`
     text-align: center;
     background-color: ${({theme})=>theme.color.galery};
 `;
