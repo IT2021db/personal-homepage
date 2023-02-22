@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Section } from "../Skills/styled";
-import { SubHeader, Header, StyledGithubIcon, Title, ReposWrapper } from "./styled";
+import { Section, SubHeader, Header, StyledGithubIcon, Title, ReposWrapper } from "./styled";
 import { Repositories } from "./Repositories";
 import { useDispatch, useSelector } from "react-redux";
 import { selectRepos } from "../homepageSlice";
