@@ -27,7 +27,9 @@ export const Portfolio = () => {
                         <Repositories
                             key={repo.id}
                             repoName={repo.name}
+                            userName={repo.owner.login}
                             description={repo.description}
+                            repoURL={repo.html_url}
                         />
                     ))}
                 </ReposWrapper>
