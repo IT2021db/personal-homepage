@@ -18,18 +18,21 @@ export const Header = styled.h3`
     text-align: center;
     margin-bottom: 32px;
 `;
-
-export const Section = styled.header`
+export const Section = styled.section`
+    padding:32px 32px 32px 0;
+    background-color: ${({ theme }) => theme.color.white};
     text-align: center;
-    background-color: ${({theme})=>theme.color.galery};
+   
 `;
 
 export const StyledGithubIcon = styled(GithubIcon)`
     margin-bottom:12px ;
 `;
 
-export const ReposWrapper = styled.h3`
-    text-align: center;
-    background-color: ${({theme})=>theme.color.galery};
+export const ReposWrapper = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:32px;
+    background-color: ${({ theme }) => theme.color.galery};
 `;
 
