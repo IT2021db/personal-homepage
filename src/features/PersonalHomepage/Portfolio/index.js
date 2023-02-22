@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from "react";
-//import { useDispatch, useSelector } from "react-redux";
 import { Section } from "../Skills/styled";
-import { MyRecentProjects, SubHeader, Header, StyledGithubIcon } from "./styled";
-import { Content } from "./Content";
-import { githubUsername } from "./githubUsername";
-import { Title, } from "./styled";
-import { Tiles } from "./Tiles";
-
+import { SubHeader, Header, StyledGithubIcon, Title, ReposWrapper } from "./styled";
+import { Repositories } from "./Repositories";
+import { useDispatch, useSelector } from "react-redux";
+import { selectRepos } from "../homepageSlice";
+import { fetchRepos } from "../homepageSlice";
 
 
 export const Portfolio = () => {
 
-    const [state, setState] = useState()
-    // useEffect (()=>{
-    //     fetch("https://api.github.com/users/IT2021db/repos").then(res=>setState(res.data))
-    // })
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(fetchRepos());
+    }, []);
 
-    // useEffect(()=>{
-    //     dispatch(fetchRepositories(githubUsername));
-    // }, [dispatch]);
+    const repos = useSelector(selectRepos);
 
     return (
         <Section>
@@ -26,9 +22,16 @@ export const Portfolio = () => {
                 <StyledGithubIcon />
                 <SubHeader>Portfolio </SubHeader>
                 <Title>My recent projects </Title>
-                <Tiles />
+                <ReposWrapper>
+                    {repos.map((repo) => (
+                        <Repositories
+                            key={repo.id}
+                            repoName={repo.name}
+                            description={repo.description}
+                        />
+                    ))}
+                </ReposWrapper>
             </Header>
-            <Content />
         </Section>
     );
 };
