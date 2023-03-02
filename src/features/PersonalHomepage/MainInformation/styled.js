@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { themeLight } from "../../../core/App/theme";
 
 export const Wrapper = styled.header`
     display:grid;
@@ -38,6 +37,18 @@ export const Paragraph = styled.p`
     color:${({ theme }) => theme.color.slateGray}
 `;
 
-export const StyledButtonLink = styled.button`
-
+export const LinkButton = styled.a`
+    cursor:pointer;
+    text-decoration:none;
+    padding-right:15px;
+    color:white;
+    background-color: ${({ theme }) => theme.color.scienceBlue};
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+`;
+export const Icon = styled.img`
+    padding: 10px;
 `;
