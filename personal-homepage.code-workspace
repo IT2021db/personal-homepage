@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../../../dev/Repo/personal-homepage"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#8fefa2",
+			"titleBar.activeForeground": "#000000",
+			"titleBar.inactiveBackground": "#8fefa2",
+			"titleBar.inactiveForeground": "#000000",
+			"titleBar.border": "#8fefa2",
+			"activityBar.background": "#efcf8f",
+			"activityBar.foreground": "#000000",
+			"statusBar.background": "#8fefa2",
+			"statusBar.foreground": "#000000",
+			"statusBar.debuggingBackground": "#8fefa2",
+			"statusBar.debuggingForeground": "#000000",
+			"tab.activeBorder": "#8fefa2",
+			"iLoveWorkSpaceColors": true,
+			"iLoveWorkSpaceRandom": false
+		}
+	}
+}
