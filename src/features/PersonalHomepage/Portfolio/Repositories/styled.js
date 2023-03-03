@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   border: 6px solid ${({ theme }) => theme.color.iron};
   text-align: left;
   padding:20px;
