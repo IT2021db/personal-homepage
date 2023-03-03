@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Section, SubHeader, Header, StyledGithubIcon, Title, ReposWrapper } from "./styled";
+import { Wrapper, SubHeader, Header, StyledGithubIcon, Title, ReposWrapper } from "./styled";
 import { Repositories } from "./Repositories";
 import { useDispatch, useSelector } from "react-redux";
 import { selectRepos } from "../homepageSlice";
@@ -16,7 +16,7 @@ export const Portfolio = () => {
     const repos = useSelector(selectRepos);
 
     return (
-        <Section>
+        <Wrapper>
             <Header>
                 <StyledGithubIcon />
                 <SubHeader>Portfolio </SubHeader>
@@ -33,6 +33,6 @@ export const Portfolio = () => {
                     ))}
                 </ReposWrapper>
             </Header>
-        </Section>
+        </Wrapper>
     );
 };

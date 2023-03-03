@@ -18,7 +18,7 @@ export const Header = styled.h3`
     text-align: center;
     margin-bottom: 32px;
 `;
-export const Section = styled.section`
+export const Wrapper = styled.section`
     padding:32px 32px 32px 0;
     background-color: ${({ theme }) => theme.color.white};
     text-align: center;
