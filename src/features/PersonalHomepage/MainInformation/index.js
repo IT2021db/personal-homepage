@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar, Paragraph, Wrapper, Name, ThisIs, LinkButton, Icon } from "./styled";
-import {email}from "../../../common/myEmail";
+import { email } from "../../../common/myEmail";
 import envelope from "./envelope.svg";
 import imgProfile from "./imgProfile.jpg";
 
@@ -14,8 +14,10 @@ export const MainInformation = () => (
             <LinkButton
                 href={`mailto:${email}`}
                 title={email}
+                target="_blank"
+                rel="noopener norefereer"
             >
-               <Icon src={envelope}/> 
+                <Icon src={envelope} />
                 Hire Me
             </LinkButton>
         </div>
