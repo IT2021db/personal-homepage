@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themeLight } from "../../../../core/App/theme";
+import { lightTheme } from "../../../../core/App/theme";
 
 export const Wrapper = styled.section`
     margin: 63px 0;
