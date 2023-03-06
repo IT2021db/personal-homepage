@@ -17,12 +17,8 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.05em;
     word-break: break-word; //by linki przerzucaly sie do nowej linii
     overflow-y: scroll;
-    padding-bottom:  108px; //by odstep na dole byl
+    padding-bottom:  108px; 
     margin-top: 46px;
-    color:${({theme})=>theme.color.stateGray};
-
-  
-
-
+    color:${({ theme }) => theme.color.stateGray};
     }
 ;`
