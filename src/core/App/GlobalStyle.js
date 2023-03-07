@@ -12,13 +12,13 @@ export const GlobalStyle = createGlobalStyle`
     body {
     font-family: "Inter", sans-serif;
     transition: background 0.3s;
-    background-color: ${({ theme }) => theme.color.whiteLilac};
+    background-color: ${({ theme }) => theme.color.generalBackground};
     font-size: 18px;
     letter-spacing: 0.05em;
     word-break: break-word; //by linki przerzucaly sie do nowej linii
     overflow-y: scroll;
     padding-bottom:  108px; 
     margin-top: 46px;
-    color:${({ theme }) => theme.color.stateGray};
+    color:${({ theme }) => theme.color.secondaryTextColor};
     }
 ;`
