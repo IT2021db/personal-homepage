@@ -3,10 +3,13 @@ import { Avatar, Paragraph, Wrapper, Name, ThisIs, LinkButton, Icon } from "./st
 import { email } from "../../../common/myEmail";
 import envelope from "./envelope.svg";
 import imgProfile from "./imgProfile.jpg";
+import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
 
 export const MainInformation = () => (
     <Wrapper>
         <Avatar src={imgProfile} alt="Dorota Borowska" />
+        <div>
+            <ThemeSwitcher/>
         <div>
             <ThisIs>This is</ThisIs>
             <Name>Dorota Borowska</Name>
@@ -20,7 +23,9 @@ export const MainInformation = () => (
                 <Icon src={envelope} />
                 Hire Me
             </LinkButton>
-        </div>
+            </div></div>
+            
+       
     </Wrapper>
 
 );
