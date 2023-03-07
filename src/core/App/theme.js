@@ -1,16 +1,16 @@
 export const lightTheme = {
     color: {
-        black: "#000",          //black
-        headerTextColor: "#252525",   //mineShaft
+        black: "#000",                   //black
+        headerTextColor: "#252525",      //mineShaft
         secondaryTextColor: "#6E7E91",   //slateGray
-        gallery: "#EFEFEF",     //gallery
-        iron: "#D1D5DA",        //iron
-        talesBorder: "#D1D5DA",        //iron
-        white: "#fff",          //white
+        gallery: "#EFEFEF",              //gallery
+        iron: "#D1D5DA",                 //iron
+        talesBorder: "#D1D5DA",          //iron
+        white: "#fff",                   //white
         sectionBackgroundColor: "#fff",          //white
-        generalBackground: "#FBFBFE",  //whiteLilac
-        mercury: "#E5E5E5",     //mercury-----------sweatchColor
-        blueElementColor: "#0366D6"  //scienceBlue
+        generalBackground: "#FBFBFE",    //whiteLilac
+        mercury: "#E5E5E5",              //mercury-----------sweatchColor
+        blueElementColor: "#0366D6"      //scienceBlue
     },
     breakpoint: {
         mobileMax: 767,
@@ -19,17 +19,17 @@ export const lightTheme = {
 
 export const darkTheme = {
     color: {
-        black: "#000",          //black
-        headerTextColor: "#fff",          //white
-        secondaryTextColor:  "#fff",          //white
-        gallery: "#EFEFEF",     //gallery
-        iron: "#D1D5DA",        //iron
-        talesBorder:"rgba(209, 213, 218, 0.1)",
-        white: "#fff",          //white
-        sectionBackgroundColor:"rgba(54, 54, 54, 0.72)",
-        generalBackground: "#252525",   //mineShaft
-        mercury: "#E5E5E5",     //mercury-----------sweatchColor
-        blueElementColor: "#0366D6"  //scienceBlue
+        black: "#000",                      //black
+        headerTextColor: "#fff",            //white
+        secondaryTextColor: "#fff",         //white
+        gallery: "#EFEFEF",                 //gallery
+        iron: "#D1D5DA",                    //iron
+        talesBorder: "rgba(209, 213, 218, 0.1)",
+        white: "#fff",                      //white
+        sectionBackgroundColor: "rgba(54, 54, 54, 0.72)",
+        generalBackground: "#252525",       //mineShaft
+        mercury: "#E5E5E5",                 //mercury-----------switchColor
+        blueElementColor: "#0366D6"         //scienceBlue
     },
     breakpoint: {
         mobileMax: 767,
