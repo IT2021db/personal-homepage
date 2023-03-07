@@ -9,23 +9,23 @@ export const MainInformation = () => (
     <Wrapper>
         <Avatar src={imgProfile} alt="Dorota Borowska" />
         <div>
-            <ThemeSwitcher/>
-        <div>
-            <ThisIs>This is</ThisIs>
-            <Name>Dorota Borowska</Name>
-            <Paragraph>Hi! I am a begining Frontend Developer mostly using React</Paragraph>
-            <LinkButton
-                href={`mailto:${email}`}
-                title={email}
-                target="_blank"
-                rel="noopener norefereer"
-            >
-                <Icon src={envelope} />
-                Hire Me
-            </LinkButton>
+            <ThemeSwitcher />
+            <div>
+                <ThisIs>This is</ThisIs>
+                <Name>Dorota Borowska</Name>
+                <Paragraph>Hi! I am a begining Frontend Developer mostly using React</Paragraph>
+                <LinkButton
+                    href={`mailto:${email}`}
+                    title={email}
+                    target="_blank"
+                    rel="noopener norefereer"
+                >
+                    <Icon src={envelope} />
+                    Hire Me
+                </LinkButton>
             </div></div>
-            
-       
+
+
     </Wrapper>
 
 );
