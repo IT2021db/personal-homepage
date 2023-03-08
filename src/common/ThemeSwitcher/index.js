@@ -9,8 +9,8 @@ export const ThemeSwitcher = () => {
     return (
         <SwitchContainer onClick={() => dispatch(toggleTheme())}>
             <SwitchText>DARK MODE {isDark ? "on" : "off"} </SwitchText>
-            <SwitchIcon isDark={isDark}>
-                <Switcher>
+            <SwitchIcon >
+                <Switcher isDark={isDark}>
                     <IconPicture />
                 </Switcher>
             </SwitchIcon>
