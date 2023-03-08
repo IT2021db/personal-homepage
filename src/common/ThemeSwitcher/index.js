@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { SwitchContainer, SwitchText, Icon, Sun } from "./styled";
+import { SwitchContainer, SwitchText,Switcher, SwitchIcon, IconPicture } from "./styled";
 import { selectIsDark, toggleTheme } from "./themeSwitcherSlice";
 
 export const ThemeSwitcher = () => {
@@ -9,9 +9,11 @@ export const ThemeSwitcher = () => {
     return (
         <SwitchContainer onClick={() => dispatch(toggleTheme())}>
             <SwitchText>DARK MODE {isDark ? "on" : "off"} </SwitchText>
-            <Icon isDark={isDark}>
-                <Sun />
-            </Icon>
+            <SwitchIcon isDark={isDark}>
+                <Switcher>
+                    <IconPicture />
+                </Switcher>
+            </SwitchIcon>
         </SwitchContainer>
     )
 };
