@@ -1,16 +1,16 @@
 export const lightTheme = {
     color: {
-        black: "#000",                   //black
-        headerTextColor: "#252525",      //mineShaft
-        secondaryTextColor: "#6E7E91",   //slateGray
-        gallery: "#EFEFEF",              //gallery
-        iron: "#D1D5DA",                 //iron
-        talesBorder: "#D1D5DA",          //iron
-        white: "#fff",                   //white
-        sectionBackgroundColor: "#fff",          //white
-        generalBackground: "#FBFBFE",    //whiteLilac
-        mercury: "#E5E5E5",              //mercury-----------sweatchColor
-        blueElementColor: "#0366D6"      //scienceBlue
+        black: "#000",                  
+        headerTextColor: "#252525",    
+        secondaryTextColor: "#6E7E91",                 
+        talesBorder: "#D1D5DA",         
+        white: "#fff",                   
+        sectionBackgroundColor: "#fff",        
+        generalBackground: "#FBFBFE",    
+        switcherBackground: "#E5E5E5",  
+        switcherBorder: "#6E7E91",
+        blueElementColor: "#0366D6" ,    
+        sunColor:"#FFFF"
     },
     breakpoint: {
         mobileMax: 767,
@@ -19,37 +19,19 @@ export const lightTheme = {
 
 export const darkTheme = {
     color: {
-        black: "#000",                      //black
-        headerTextColor: "#fff",            //white
-        secondaryTextColor: "#fff",         //white
-        gallery: "#EFEFEF",                 //gallery
-        iron: "#D1D5DA",                    //iron
+        black: "#000",                     
+        headerTextColor: "#fff",           
+        secondaryTextColor: "#fff",                              
         talesBorder: "rgba(209, 213, 218, 0.1)",
-        white: "#fff",                      //white
+        white: "#fff",                    
         sectionBackgroundColor: "rgba(54, 54, 54, 0.72)",
-        generalBackground: "#252525",       //mineShaft
-        mercury: "#E5E5E5",                 //mercury-----------switchColor
-        blueElementColor: "#0366D6"         //scienceBlue
+        generalBackground: "#252525",      
+        blueElementColor: "#0366D6" ,        
+        switcherBackground:"rgba(54, 54, 54, 0.72)",
+        switcherBorder: "#FFFF",
+        sunColor:"#000"
     },
     breakpoint: {
         mobileMax: 767,
     },
 };
-
-const colorName = {
-    black: "#000",
-    mineShaft: "#252525",
-    silver: "#ccc",
-    slateGray: "#6E7E91",
-    alto: "#ddd",
-    gallery: "#EFEFEF",
-    iron: "#D1D5DA",
-    white: "#fff",
-    whiteLilac: "#FBFBFE",
-    mercury: "#E5E5E5",
-    teal: "#008080",
-    cardinal: "#c41e3a",
-    forestGreen: "#228c22",
-    scienceBlue: "#0366D6",
-    whiteLilac: "#FBFBFE"
-}
