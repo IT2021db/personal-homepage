@@ -5,6 +5,7 @@ export const Wrapper = styled.header`
     grid-template-columns: auto 1fr;
     max-width: 1216px;
     height: 404px;
+    margin-top: 115px;
 `;
 
 export const Avatar = styled.img`
