@@ -15,10 +15,14 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.color.generalBackground};
     font-size: 18px;
     letter-spacing: 0.05em;
-    word-break: break-word; //by linki przerzucaly sie do nowej linii
-    overflow-y: scroll;
+    word-break: break-word; //by linki przerzucaly sie do nowej linii ciągle najlepiej wspierane
+    overflow-y: scroll;    //aby usunąć przeskok podczas ładowania repos
     padding-bottom:  108px; 
-    margin-top: 46px;
     color:${({ theme }) => theme.color.secondaryTextColor};
+ 
+    }
+
+    @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+        padding-bottom:32px;
     }
 ;`
