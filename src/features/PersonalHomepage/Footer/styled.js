@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.footer`
     max-width: 700px;
     height: 404px;
     margin-top: 120px;
