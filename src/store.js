@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 import homepageReducer from "./features/PersonalHomepage/homepageSlice";
-import toggleTheme from "./common/ThemeSwitcher/themeSwitcherSlice";
+import toggleTheme from "./features/PersonalHomepage/ThemeSwitcher/themeSwitcherSlice";
 import { watchHomepageSaga } from "./features/PersonalHomepage/homepageSaga";
 //import { getRepos } from "../../features/PersonalHomepage/getRepos";
 
