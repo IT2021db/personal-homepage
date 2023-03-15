@@ -7,7 +7,7 @@ import { PersonalHomepage } from "../../features/PersonalHomepage";
 
 function App() {
   const isDark = useSelector(selectIsDark);
-  console.log(`isDark in app:${isDark}`);
+ 
   return (
     <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <GlobalStyle />
