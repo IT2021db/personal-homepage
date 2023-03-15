@@ -24,5 +24,6 @@ export const { fetchRepos, fetchReposSuccess, fetchReposError } = homepageSlice.
 
 const selecthomepageSlice = state => state.homepage;
 export const selectRepos = state => selecthomepageSlice(state).repos;
+export const selectReposState = state => selecthomepageSlice(state).status;
 
 export default homepageSlice.reducer;
