@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Section, SubHeader, Header, StyledGithubIcon, Title, ReposSection } from "./styled";
 import { Repositories } from "./Content/Repositories";
 import { useDispatch, useSelector } from "react-redux";
-import { selectRepos } from "../homepageSlice";
+import { selectRepos, selectReposState } from "../homepageSlice";
 import { fetchRepos } from "../homepageSlice";
+import { Content } from "./Content";
 
 
 export const Portfolio = () => {
@@ -14,24 +15,21 @@ export const Portfolio = () => {
     }, []);
 
     const repos = useSelector(selectRepos);
-
+    const status=useSelector(selectReposState)
+    console.log(`repos w Portfolio`)
+    console.log({repos})
     return (
         <Section>
             <Header>
                 <StyledGithubIcon />
                 <SubHeader>Portfolio </SubHeader>
                 <Title>My recent projects </Title>
-                <ReposSection>
-                    {repos.map((repo) => (
-                        <Repositories
-                            key={repo.id}
-                            repoName={repo.name}
-                            userName={repo.owner.login}
-                            description={repo.description}
-                            repoURL={repo.html_url}
-                        />
-                    ))}
-                </ReposSection>
+                <Content 
+                     repos={repos}           
+                     status={status}
+                />
+              
+               
             </Header>
         </Section>
     );
