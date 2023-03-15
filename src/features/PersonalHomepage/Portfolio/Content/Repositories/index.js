@@ -1,33 +1,40 @@
-import { Title, Description, Link, LinkWrapper, Wrapper } from "./styled"
+import { List, Title, Description, Link, LinkWrapper, Wrapper } from "./styled"
 
-export const Repositories = ({ repoName, userName, description, repoURL }) => {
-
+export const Repositories = ({ repos }) => {
+    console.log("repos w Repositories:")
+    console.log(repos)
     return (
-        <Wrapper>
-            <Title>{repoName}</Title>
-            <Description>
-                {description}
-            </Description>
-            <LinkWrapper>
-                Demo:
-                <Link
-                    href={`https://${userName}.github.io/${repoName}`}
-                    target="_blank"
-                    rel="noopener norefereer"
-                >
-                    {`https://${userName}.github.io/${repoName}`}
-                </Link>
-            </LinkWrapper>
-            <LinkWrapper>
-                Code:
-                <Link
-                    href={repoURL}
-                    target="_blank"
-                    rel="noopener norefereer"
-                >
-                    {repoURL}
-                </Link>
-            </LinkWrapper>
-        </Wrapper>
+        <List>
+            {repos.map(repo => (
+                < Wrapper key={repo.id} >
+                    <Title>{repo.name}</Title>
+                    <Description>
+                        {repo.description}
+                    </Description>
+                    <LinkWrapper>
+                        Demo:
+                        <Link
+                            href={`https://${repo.owner.login}.github.io/${repo.name}`}
+                            target="_blank"
+                            rel="noopener norefereer"
+                        >
+                            {`https://${repo.owner.login}.github.io/${repo.name}`}
+                        </Link>
+                    </LinkWrapper>
+                    <LinkWrapper>
+                        Code:
+                        <Link
+                            href={repo.html_url}
+                            target="_blank"
+                            rel="noopener norefereer"
+                        >
+                            {repo.html_url}
+                        </Link>
+                    </LinkWrapper>
+                </Wrapper >
+            ))}
+
+        </List>
+
     );
 };

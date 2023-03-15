@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+export const List=styled.ul``;
+
 export const Wrapper = styled.section`
   border: 6px solid ${({ theme }) => theme.color.talesBorder};
   text-align: left;
