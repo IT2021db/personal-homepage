@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {ButtonLink}from"../ButtonLink/styled";
 
 export const Wrapper = styled.header`
     margin-top:-30px;           //that is height of the theme switch
@@ -62,22 +63,10 @@ export const Paragraph = styled.p`
      } */
 `;
 
-export const ButtonLink = styled.a`
-    cursor:pointer;
-    text-decoration:none;
-    padding-right:15px;
-    color: ${({ theme }) => theme.color.white};
-    background-color: ${({ theme }) => theme.color.blueElementColor};
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:32px;
-    border-radius: 4px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        margin-top:24px;
-     }
-`;
 export const Icon = styled.img`
     padding: 10px;
+`;
+
+export const Button=styled(ButtonLink)`
+padding-right:25px;
 `;
