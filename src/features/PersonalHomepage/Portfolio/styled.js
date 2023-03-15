@@ -18,7 +18,7 @@ export const Header = styled.h3`
     text-align: center;
     margin-bottom: 32px;
 `;
-export const Wrapper = styled.section`
+export const Section = styled.section`
     padding:32px 0 32px 0;
     background-color: ${({ theme }) => theme.color.generalBackground};
     text-align: center;
@@ -29,7 +29,7 @@ export const StyledGithubIcon = styled(GithubIcon)`
     margin-bottom:12px ;
 `;
 
-export const ReposWrapper = styled.ul`
+export const ReposSection = styled.ul`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap:32px;
