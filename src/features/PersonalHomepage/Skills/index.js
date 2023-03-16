@@ -3,9 +3,9 @@ import { skillset } from "./skillset";
 import { toLearn } from "./toLearn";
 import { Content } from "./Content/index.js";
 
-export const Skills = (itemSet, title) => (
+export const Skills = (skills, title) => (
     <>
-        <Content title="My skills includes 🛠️ " itemSet={skillset} />
-        <Content title="WhatI want to learn next 🚀" itemSet={toLearn} />
+        <Content title="My skills includes 🛠️ " skills={skillset} />
+        <Content title="WhatI want to learn next 🚀" skills={toLearn} />
     </>
 );

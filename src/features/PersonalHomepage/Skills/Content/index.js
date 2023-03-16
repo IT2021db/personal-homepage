@@ -1,13 +1,16 @@
 import React from "react";
-import { Item, List, Section, Title } from "./styled";
+import { Item, List, Section, Title, Bullet } from "./styled";
 
-export const Content = ({ title, itemSet }) => {
+export const Content = ({ title, skills }) => {
     return (
         <Section>
             <Title>{title}</Title>
             <List>
-                {itemSet.map(item => (
-                    <Item key={item.id}>{item.content}</Item>
+                {skills.map(item => (
+                    <Item key={item.id}>
+                        <Bullet/>
+                        {item.content}
+                        </Item>
                 ))}
             </List>
         </Section>
