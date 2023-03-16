@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Paragraph, Wrapper, Name, ThisIs,Button, Icon } from "./styled";
+import { Avatar, Paragraph, Wrapper, Name, ThisIs,StyledButton, Icon } from "./styled";
 import { email } from "../../../common/myEmail";
 import envelope from "./envelope.svg";
 import imgProfile from "./imgProfile.jpg";
@@ -12,7 +12,7 @@ export const MainInformation = () => (
             <ThisIs>This is</ThisIs>
             <Name>Dorota Borowska</Name>
             <Paragraph>Hi! I am a begining Frontend Developer mostly using React</Paragraph>
-            <Button
+            <StyledButton
                 href={`mailto:${email}`}
                 title={email}
                 target="_blank"
@@ -20,7 +20,7 @@ export const MainInformation = () => (
             >
                 <Icon src={envelope} />
                 Hire Me
-            </Button>
+            </StyledButton>
         </div>
 
 
