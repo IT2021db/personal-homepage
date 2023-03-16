@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {ReactComponent as Icon}from"./dot.svg";
 
 export const Section = styled.section`
     margin-top: 63px;
@@ -30,6 +31,11 @@ export const List = styled.ul`
  display: grid;
  grid-template-columns:repeat(2, 1fr);
  grid-gap:5px;
+ list-style:none;
 `;
 
 export const Item = styled.li``;
+
+export const Bullet=styled(Icon)`
+color: ${({ theme }) => theme.color.blueElementColor};
+`;
