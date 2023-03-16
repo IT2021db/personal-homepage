@@ -1,5 +1,5 @@
 import React from "react";
-import { skill, List, Section, Title, Bullet } from "./styled";
+import { Item, List, Section, Title, Bullet } from "./styled";
 
 export const Content = ({ title, skills }) => {
     return (
@@ -7,10 +7,10 @@ export const Content = ({ title, skills }) => {
             <Title>{title}</Title>
             <List>
                 {skills.map(skill => (
-                    <skill key={skill.id}>
+                    <Item key={skill.id}>
                         <Bullet />
                         {skill.content}
-                    </skill>
+                    </Item>
                 ))}
             </List>
         </Section>
