@@ -1,15 +1,15 @@
 import React from "react";
-import { Item, List, Wrapper, Title } from "./styled";
+import { Item, List, Section, Title } from "./styled";
 
-export const ListSection = ({ title, itemSet }) => {
+export const Content = ({ title, itemSet }) => {
     return (
-        <Wrapper>
+        <Section>
             <Title>{title}</Title>
             <List>
                 {itemSet.map(item => (
                     <Item key={item.id}>{item.content}</Item>
                 ))}
             </List>
-        </Wrapper>
+        </Section>
     )
 }

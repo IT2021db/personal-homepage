@@ -1,11 +1,11 @@
 import React from "react";
 import { skillset } from "./skillset";
 import { toLearn } from "./toLearn";
-import { ListSection } from "./ListSection/index.js";
+import { Content } from "./Content/index.js";
 
 export const Skills = (itemSet, title) => (
     <>
-        <ListSection title="My skills includes 🛠️ " itemSet={skillset} />
-        <ListSection title="WhatI want to learn next 🚀" itemSet={toLearn} />
+        <Content title="My skills includes 🛠️ " itemSet={skillset} />
+        <Content title="WhatI want to learn next 🚀" itemSet={toLearn} />
     </>
 );
