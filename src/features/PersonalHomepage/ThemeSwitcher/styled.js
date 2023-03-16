@@ -11,6 +11,10 @@ export const SwitchText = styled.p`
     font-size:12px;
     font-weight:700;
     text-transform: uppercase;
+
+    @media(max-width:${({theme})=>theme.breakpoints.mobileMax}){
+        display: none;
+    }
 `;
 
 export const SwitchIcon = styled.span`
