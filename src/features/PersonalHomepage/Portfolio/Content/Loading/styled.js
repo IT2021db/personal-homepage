@@ -18,11 +18,13 @@ const loaderAnimation = keyframes`
 export const StyledSpinner = styled(Spinner)`
     animation: 1.8s infinite linear ${loaderAnimation};
     color:${({ theme }) => theme.color.blueElementColor};
+    margin-top: 48px;
 
     @media (orientation: landscape) and (max-width: 900px) {
       height: 45px;
     }
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
         height: 35px;
+        margin-top:25px;
     }
 `;
