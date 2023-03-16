@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
-    margin: 63px 0;
-    padding:32px ;
+export const Section = styled.section`
+    margin-top: 63px;
+    padding:32px 0;
     background-color: ${({ theme }) => theme.color.sectionBackgroundColor};
+
+    @media(max-width:${({theme})=>theme.breakpoints.mobileMax}){
+        margin:48px 0;
+        padding:0;
+    }
 `;
 
 export const Title = styled.h3`
@@ -13,6 +18,10 @@ export const Title = styled.h3`
     padding-bottom: 16px;
     border-bottom: 1px solid ${({ theme }) => theme.color.talesBorder};
     color: ${({ theme }) => theme.color.headerTextColor};
+
+    @media(max-width:${({theme})=>theme.breakpoints.mobileMax}){
+       font-size:18px;
+    }
 
 `;
 
