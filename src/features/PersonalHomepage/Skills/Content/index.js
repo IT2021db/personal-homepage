@@ -1,16 +1,16 @@
 import React from "react";
-import { Item, List, Section, Title, Bullet } from "./styled";
+import { skill, List, Section, Title, Bullet } from "./styled";
 
 export const Content = ({ title, skills }) => {
     return (
         <Section>
             <Title>{title}</Title>
             <List>
-                {skills.map(item => (
-                    <Item key={item.id}>
-                        <Bullet/>
-                        {item.content}
-                        </Item>
+                {skills.map(skill => (
+                    <skill key={skill.id}>
+                        <Bullet />
+                        {skill.content}
+                    </skill>
                 ))}
             </List>
         </Section>
