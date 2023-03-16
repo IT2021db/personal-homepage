@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
+
 export const Wrapper = styled.footer`
     max-width: 700px;
     height: 404px;
     margin-top: 120px;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+       margin-top:48px;
+    }
 `;
 
-export const LetsTalk = styled.div`
+export const LetsTalk = styled.h2`
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: initial;
-    margin-bottom:24px;
+    margin:0 0 18px 0;
     color:${({ theme }) => theme.color.secondaryTextColor}
 `;
 
@@ -21,6 +26,11 @@ export const Email = styled.a`
     line-height: 46px;
     color:${({ theme }) => theme.color.headerTextColor};
     text-decoration: none;
+    margin: 0;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+       font-size:22px;
+    }
 
     &:hover {
         color:${({ theme }) => theme.color.blueElementColor};
@@ -32,7 +42,12 @@ export const Paragraph = styled.p`
     line-height: 1.4;
     letter-spacing: 0.05em; 
     color:${({ theme }) => theme.color.secondaryTextColor};
-    margin: 24px 0 24px 0;
+    margin: 24px 0 46px 0;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+      font-size: 14px; 
+      margin: 12px 0 36px 0;    
+    }
 `;
 
 export const Link = styled.a`
@@ -42,11 +57,15 @@ export const Link = styled.a`
     margin-right:24px;
     margin:  130px 26px 20px 0;
 
+    @media (max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+     
+    }
+
     &:hover {
        color:${({ theme }) => theme.color.blueElementColor};
     }
 `;
 
 export const SocialWrapper = styled.div`
-    margin-top: 56px;
+  
 `;
