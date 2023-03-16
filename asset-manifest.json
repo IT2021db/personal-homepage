@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.10f20c2b.js",
+    "main.js": "/personal-homepage/static/js/main.c880b12e.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/imgProfile.jpg": "/personal-homepage/static/media/imgProfile.6d66fb22f702f559bd12.jpg",
     "static/media/brightness.svg": "/personal-homepage/static/media/brightness.95855423c5d184dc12afb1f3b84a9a90.svg",
@@ -8,11 +8,14 @@
     "index.html": "/personal-homepage/index.html",
     "static/media/github.svg": "/personal-homepage/static/media/github.2da5169cd110748e89a1f98450a99734.svg",
     "static/media/linkedInIcon.svg": "/personal-homepage/static/media/linkedInIcon.9f38a04c76c9595b2da81e0828807b47.svg",
+    "static/media/warning.svg": "/personal-homepage/static/media/warning.368eab1b87e3c2785bab7da11c278b44.svg",
     "static/media/envelope.svg": "/personal-homepage/static/media/envelope.61831834959dc0a458ceefcfce445f01.svg",
-    "main.10f20c2b.js.map": "/personal-homepage/static/js/main.10f20c2b.js.map",
+    "static/media/spinner.svg": "/personal-homepage/static/media/spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
+    "static/media/dot.svg": "/personal-homepage/static/media/dot.41506939970e6369828dfce4b6919035.svg",
+    "main.c880b12e.js.map": "/personal-homepage/static/js/main.c880b12e.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.10f20c2b.js"
+    "static/js/main.c880b12e.js"
   ]
 }
