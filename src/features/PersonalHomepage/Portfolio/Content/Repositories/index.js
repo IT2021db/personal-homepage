@@ -1,4 +1,4 @@
-import { List, Title, Description, Link, LinkWrapper, Wrapper } from "./styled"
+import { List, Title, Description, Link, LinkWrapper, Tile } from "./styled"
 
 export const Repositories = ({ repos }) => {
     console.log("repos w Repositories:")
@@ -6,7 +6,7 @@ export const Repositories = ({ repos }) => {
     return (
         <List>
             {repos.map(repo => (
-                < Wrapper key={repo.id} >
+                < Tile key={repo.id} >
                     <Title>{repo.name}</Title>
                     <Description>
                         {repo.description}
@@ -31,7 +31,7 @@ export const Repositories = ({ repos }) => {
                             {repo.html_url}
                         </Link>
                     </LinkWrapper>
-                </Wrapper >
+                </Tile >
             ))}
 
         </List>
