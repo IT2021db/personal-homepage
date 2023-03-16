@@ -1,10 +1,17 @@
 import React from "react";
-import { LetsTalk, Wrapper, Paragraph, Email, Link, SocialWrapper } from "./styled";
+import {
+    LetsTalk,
+    Wrapper,
+    Paragraph,
+    Email,
+    Link,
+    SocialWrapper,
+    StyledLinkedIn,
+    StyledGithub
+} from "./styled";
 import { email } from "../../../common/myEmail";
 import { linkedIn } from "../../../common//MyLinkedIn.js";
 import { github } from "../../../common/myGithub";
-import { ReactComponent as GithubIcon } from "./githubIcon.svg";
-import { ReactComponent as LinkedInIcon } from "./linkedInIcon.svg";
 
 export const Footer = () => (
     <Wrapper>
@@ -29,7 +36,7 @@ export const Footer = () => (
                 target="_blank"
                 rel="noopener norefereer"
             >
-                <GithubIcon />
+                <StyledGithub />
             </Link>
             <Link
                 href={linkedIn}
@@ -37,7 +44,7 @@ export const Footer = () => (
                 target="_blank"
                 rel="noopener norefereer"
             >
-                <LinkedInIcon />
+                <StyledLinkedIn />
             </Link>
         </SocialWrapper>
     </Wrapper>

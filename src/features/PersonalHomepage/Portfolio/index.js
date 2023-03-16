@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Section, SubHeader, Header, StyledGithubIcon, MyRecentRepos} from "./styled";
+import { Section, SubHeader, Header, StyledGithubIcon, MyRecentRepos } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 import { selectRepos, selectReposState } from "../homepageSlice";
 import { fetchRepos } from "../homepageSlice";
@@ -15,8 +15,7 @@ export const Portfolio = () => {
 
     const repos = useSelector(selectRepos);
     const status = useSelector(selectReposState)
-    console.log(`repos w Portfolio`)
-    console.log({ repos })
+
     return (
         <Section>
             <Header>

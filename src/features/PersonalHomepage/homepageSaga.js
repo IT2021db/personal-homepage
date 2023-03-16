@@ -8,7 +8,7 @@ function* fetchReposHandler() {
         yield delay(1000);
         const repos = yield call(getRepos);
         yield put(fetchReposSuccess(repos));
-        console.log(repos)
+            
     } catch (error) {
         yield put(fetchReposError());
     }

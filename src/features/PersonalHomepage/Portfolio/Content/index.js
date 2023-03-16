@@ -3,11 +3,8 @@ import { Loading } from "./Loading";
 import { Repositories } from "./Repositories";
 
 export const Content = ({ status, repos }) => {
-    console.log(`status ${status}`)
-    console.log(`repos w Content:`)
-    
-    console.log({repos})
-    switch (status) {
+  
+     switch (status) {
         case "initial":
             return null;
 
@@ -15,7 +12,7 @@ export const Content = ({ status, repos }) => {
             return <Loading />
 
         case "error":
-             return <ErrorBox/>;
+            return <ErrorBox />;
 
         case "success":
             return <Repositories repos={repos} />

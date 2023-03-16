@@ -1,8 +1,7 @@
 import { List, Title, Description, Link, LinkWrapper, Tile } from "./styled"
 
 export const Repositories = ({ repos }) => {
-    console.log("repos w Repositories:")
-    console.log(repos)
+
     return (
         <List>
             {repos.map(repo => (
@@ -33,8 +32,6 @@ export const Repositories = ({ repos }) => {
                     </LinkWrapper>
                 </Tile >
             ))}
-
         </List>
-
     );
 };

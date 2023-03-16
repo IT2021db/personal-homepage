@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ReactComponent as Github } from "./githubIcon.svg";
+import { ReactComponent as LinkedIn } from "./linkedInIcon.svg";
 
 
 export const Wrapper = styled.footer`
@@ -17,7 +19,8 @@ export const LetsTalk = styled.h2`
     line-height: 1.3;
     letter-spacing: initial;
     margin:0 0 18px 0;
-    color:${({ theme }) => theme.color.secondaryTextColor}
+    color:${({ theme }) => theme.color.secondaryTextColor};
+    font-size:12px;
 `;
 
 export const Email = styled.a`
@@ -66,6 +69,22 @@ export const Link = styled.a`
     }
 `;
 
-export const SocialWrapper = styled.div`
-  
+export const SocialWrapper = styled.div``;
+export const StyledGithub = styled(Github)`
+    height: 48px;
+    width:48px;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+        height: 32px;
+        width:32px;
+    }
+`;
+export const StyledLinkedIn = styled(LinkedIn)`
+   height: 48px;
+    width:48px;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+        height: 32px;
+        width:32px;
+    }
 `;

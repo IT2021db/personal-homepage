@@ -8,7 +8,6 @@ const themeSwitcherSlice = createSlice({
     reducers: {
         toggleTheme: state => {
             state.isDark = !state.isDark;
-            console.log(`stan w reducerze${state.isDark}`)
         },
     }
 });
@@ -24,5 +23,3 @@ export const selectIsDark = state => state.theme.isDark;
 
 export default themeSwitcherSlice.reducer;
 
-console.log(selectIsDark)
-console.log(selectThemeState)
