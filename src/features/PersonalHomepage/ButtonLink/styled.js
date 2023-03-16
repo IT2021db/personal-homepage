@@ -11,10 +11,9 @@ export const ButtonLink = styled.a`
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top:32px;
     border-radius: 4px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-        margin-top:24px;
+        font-size:18px;
      }
 `;
