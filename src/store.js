@@ -2,9 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 import homepageReducer from "./features/PersonalHomepage/homepageSlice";
 import toggleTheme from "./features/PersonalHomepage/ThemeSwitcher/themeSwitcherSlice";
-import { watchHomepageSaga } from "./features/PersonalHomepage/homepageSaga";
-//import { getRepos } from "../../features/PersonalHomepage/getRepos";
-
+import  rootSaga  from "./core/App/rootSaga.js";
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
@@ -17,5 +15,5 @@ const store = configureStore({
 
 //getRepos().then(ZMIENNA => console.log(ZMIENNA));
 
-sagaMiddleware.run(watchHomepageSaga)
+sagaMiddleware.run(rootSaga)
 export default store;
