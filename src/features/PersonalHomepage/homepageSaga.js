@@ -14,7 +14,7 @@ function* fetchReposHandler() {
     }
 }
 
-export function* watchHomepageSaga() {
+export function* homepageSaga() {
     yield takeLatest(fetchRepos.type, fetchReposHandler);
 }
 
