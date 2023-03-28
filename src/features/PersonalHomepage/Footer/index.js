@@ -25,8 +25,8 @@ export const Footer = () => (
             {email}
         </Email>
         <Paragraph>
-            I’m always open to the new chalenge.If you have a&nbsp;website,
-            dashboard or mobile app in mindand need some help to%nbsp;make your ideas come to life,
+            I’m always open to the new chalenge. If you have a&nbsp;website,
+            dashboard or mobile app in mindand need some help to&nbsp;make your ideas come to life,
             feel free to conatct me 😊
         </Paragraph>
         <SocialWrapper>
