@@ -4,7 +4,6 @@ export const skillset = [
     { id: 3, content: "CSS (BEM convention, Flexbox, Grid)" },
     { id: 4, content: "JavaScript (ES6+ features, Immutability)" },
     { id: 5, content: "Git" },
-    { id: 5, content: "Git" },
     { id: 6, content: "React (Hooks, Router)" },
     { id: 7, content: "Styled Components" },
     { id: 8, content: "Redux (Toolkit), Redux-Saga" },
