@@ -45,6 +45,7 @@ export const Item = styled.li`
     display:flex;
     line-height: 1.4;
     letter-spacing:0;
+    align-items: start;
 
     @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
        line-height: 1.2;
@@ -54,6 +55,7 @@ export const Item = styled.li`
 export const Bullet = styled(Icon)`
     color: ${({ theme }) => theme.color.blueElementColor};
     margin-right:16px;
+    margin-top: 8px;
     height: auto;
 
     @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
