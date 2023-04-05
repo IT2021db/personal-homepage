@@ -8,7 +8,7 @@ export const Content = ({ title, skills }) => {
             <List>
                 {skills.map(skill => (
                     <Item key={skill.id}>
-                        <Bullet />
+                     
                         {skill.content}
                     </Item>
                 ))}

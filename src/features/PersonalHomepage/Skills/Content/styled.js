@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Icon } from "./dot.svg";
+//import { ReactComponent as Icon } from "./dot.svg";
 
 export const Section = styled.section`
     margin-top: 63px;
@@ -34,32 +34,54 @@ export const List = styled.ul`
     grid-template-columns:repeat(3, 1fr);
     grid-gap:8px 32px;
     list-style:none;
+    font-size: 18px;
+    line-height:100%;
+    
 
     @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
         grid-template-columns:1fr;
         font-size: 12px;
     }
+
+     /* @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+        grid-template-columns:1fr;
+        font-size: 12px;
+    } */
 `;
 
 export const Item = styled.li`
-    display:flex;
-    line-height: 1.4;
-    letter-spacing:0;
-    align-items: start;
+ ::before{
+   content:".";
+    font-size: 4em;
+    padding-right: 16px;
+    vertical-align:3px;
+    color: ${({ theme }) => theme.color.blueElementColor}; 
 
     @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
-       line-height: 1.2;
+        padding-right:8px;
     }
+  }
 `;
 
-export const Bullet = styled(Icon)`
-    color: ${({ theme }) => theme.color.blueElementColor};
-    margin-right:16px;
-    margin-top: 8px;
-    height: auto;
+// export const Bullet = styled(Icon)`
+//     color: ${({ theme }) => theme.color.blueElementColor};
+//     margin-right:16px;
+//     margin-top: 8px;
+//     height: auto;
 
-    @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
-       width: 6px;
-       margin-right: 8px;
-    }
-`;
+/* @media(max-width:${({ theme }) => theme.breakpoints.mobileMax}){
+   width: 6px;
+   margin-right: 8px;
+} */
+/* @media(max-width:${({ theme }) => theme.breakpoints.tablet}){
+   width: 6px;
+   margin-right: 8px; //59min
+} */
+/* `; */
+// export const Bullet = styled.div`
+//   width: 9px;
+//   height: 9px;
+//   border-radius: 50%;
+//   background-color: ${({ theme }) => theme.color.scienceblue};
+//   margin-right: 16px;
+// `;
