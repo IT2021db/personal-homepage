@@ -25,4 +25,5 @@ export const skillset = [
     { id: 24, content: "Teamwork" },
     { id: 25, content: "Figma" },
     { id: 26, content: "Trello" },
+    { id: 27, content: "C#" },
 ];
