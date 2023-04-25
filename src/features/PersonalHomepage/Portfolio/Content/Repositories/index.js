@@ -1,10 +1,13 @@
 import { List, Title, Description, Link, LinkWrapper, Tile } from "./styled"
 
 export const Repositories = ({ repos }) => {
-const selectedRepoName="movies-browser-react";
-const selectedRepo = repos.find(repo => repo.name === selectedRepoName);
-const otherRepos = repos.filter(repo => repo.name !== selectedRepoName);
-const orderedRepos = [selectedRepo, ...otherRepos];
+    const selectedFirstRepoName = "movies-browser-react";
+    const selectedSecondRepoName = "todos-list-react-ts";
+    const selectedFirstRepo = repos.find(repo => repo.name === selectedFirstRepoName);
+    const selectedSecondRepo = repos.find(repo => repo.name === selectedSecondRepoName);
+    const otherRepos = repos.filter(repo => repo.name !== selectedFirstRepoName && repo.name !== selectedSecondRepoName);
+    const orderedRepos = [selectedFirstRepo, selectedSecondRepo, ...otherRepos];
+   
     return (
         <List>
             {orderedRepos.map(repo => (
